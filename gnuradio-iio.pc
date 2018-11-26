@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: gnuradio-iio
+Description: GNU Radio blocks for the IIO devices
+Requires: gnuradio-runtime gnuradio-analog gnuradio-blocks
+Version: 0.3
+Libs: -L${libdir} -lgnuradio-iio -lgnuradio-analog -lgnuradio-blocks
+Cflags: -I${includedir}
